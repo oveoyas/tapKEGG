@@ -4,13 +4,12 @@ tapKEGG consists of a few simple Perl scripts that get compound and reaction dat
 
 Requires the [LWP::Simple](http://search.cpan.org/~ether/libwww-perl-6.13/lib/LWP/Simple.pm) module and an Internet connection (obviously).
 
-Usage:
+## Usage
 
 The scripts `get_kegg_compound_ids.pl` and `get_kegg_reaction_ids.pl` get lists of all compound and reaction identifiers, respectively. The scripts `get_kegg_compound_entries.pl` and `get_kegg_reaction_entries.pl` get the full entries of all compounds and reactions and requires a list of identifiers as input. Thus, if you want to get all reaction entries, for example, do something like this in a UNIX environment:
 ```
 ./get_kegg_reaction_ids
 ./get_kegg_reaction_entries kegg_reaction_ids
-
 ```
 Getting identifiers is typically fast and getting entries is typically slower (takes minutes or hours).
 

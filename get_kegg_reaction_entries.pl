@@ -7,7 +7,7 @@ use LWP::Simple;
 # Declare and initialize filename variables. Get name of input file from command line or user input.
 my $infilename;
 if ($#ARGV < 0) {
-	print "Argument was not provided, please enter name of input file: ";
+	print "Argument was not provided, please enter name of file containing KEGG reaction IDs: ";
 	$infilename = <STDIN>;
 	chomp $infilename;
 } else {

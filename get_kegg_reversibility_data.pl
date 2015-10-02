@@ -10,7 +10,7 @@ my $outfilename = "kegg_reversibility_data";
 print "Getting list of KEGG pathway IDs...\n";
 
 # Get list of KEGG pathways
-my $content = get("http://rest.kegg.jp/list/pathway/rn") or die "Unable to get list of compounds from KEGG";
+my $content = get("http://rest.kegg.jp/list/pathway/rn") or die "Unable to get list of pathways from KEGG";
 # Store lines in array
 my @pathway_lines = split "\n", $content;
 

@@ -1,0 +1,1 @@
+tapKEGG consists of a few simple Perl scripts that get compound and reaction data from KEGG databases and saves the data as simple text files.  

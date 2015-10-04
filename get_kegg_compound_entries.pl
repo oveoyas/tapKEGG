@@ -15,11 +15,9 @@ if ($#ARGV < 0) {
 }
 my $outfilename = "kegg_compound_entries";
 
-# Open input file;
+# Read compound IDs from file
 open IN, '<', $infilename or die "Could not open $infilename";
-
 my @ids = ();
-
 while (defined(my $line = <IN>)) {
 	chomp $line;
 	push @ids, $line;

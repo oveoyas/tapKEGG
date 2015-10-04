@@ -15,11 +15,9 @@ if ($#ARGV < 0) {
 }
 my $outfilename = "kegg_reaction_entries";
 
-# Open input file;
+# Read reaction IDs from file
 open IN, '<', $infilename or die "Could not open $infilename";
-
 my @ids = ();
-
 while (defined(my $line = <IN>)) {
 	chomp $line;
 	push @ids, $line;
@@ -33,7 +31,8 @@ my $offset = 10;
 open OUT, '>', $outfilename or die "Could not open $outfilename";
 
 # Get KEGG entries for all reaction IDs.
-for (my $i = 0; $i < scalar @ids; $i += 10) {	
+for (my $i = 0; $i < scalar @ids; $i += 10) {
+	# Change offset if end of ID list has been reached
 	$offset = $#ids - $i if $#ids - $i < 10;
 	my $str = join "+", @ids[$i .. $i + $offset];
 	my $content = get("http://rest.kegg.jp/get/$str") or die "Unable to get list of reactions from KEGG";

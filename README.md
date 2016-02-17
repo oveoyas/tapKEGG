@@ -6,7 +6,7 @@ Requires the [LWP::Simple](http://search.cpan.org/~ether/libwww-perl-6.13/lib/LW
 
 ## Usage
 
-The scripts `get_kegg_compound_ids.pl` and `get_kegg_reaction_ids.pl` get lists of all compound and reaction identifiers, respectively. The scripts `get_kegg_compound_entries.pl` and `get_kegg_reaction_entries.pl` get the full entries of all compounds and reactions and require lists of identifiers as input. For example, if you want to get all reaction entries, do something like this in a UNIX environment:
+The scripts `get_kegg_compound_ids.pl` and `get_kegg_reaction_ids.pl` get lists of all compound and reaction identifiers, respectively. The scripts `get_kegg_compound_entries.pl` and `get_kegg_reaction_entries.pl` get the full entries of compounds and reactions and require lists of identifiers as input. For example, if you want to get all reaction entries, do something like this in a UNIX environment:
 ```
 ./get_kegg_reaction_ids
 ./get_kegg_reaction_entries kegg_reaction_ids

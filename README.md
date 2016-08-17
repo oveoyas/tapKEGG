@@ -2,7 +2,7 @@
 
 tapKEGG consists of a few Perl scripts that get compound and reaction data from KEGG databases and save it as text files.
 
-Requires the [LWP::Simple](http://search.cpan.org/~ether/libwww-perl-6.13/lib/LWP/Simple.pm) module and an Internet connection (obviously).
+Requires the [LWP::Simple](http://search.cpan.org/dist/libwww-perl/lib/LWP/Simple.pm) module and an Internet connection (obviously).
 
 ## Usage
 
